@@ -1,0 +1,353 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background: #004aad;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background: #033b82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    padding: 50px 100px;
+    position: relative;
+    flex-wrap: wrap;
+}
+nav {background: #00336e;}
+main { padding-bottom: 90px; } /* يتجنب الاختفاء تحت الفوتر */
+ .cardp-4::shadow::shadow::shadow::shadow { max-width: 500px; width: 100%; border-top: 9px solid #004aad; border-radius: 10px;}
+
+
+nav a {
+    text-decoration: none;
+    color: rgba(38, 0, 231, 0);
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(68, 91, 97, 0);
+    color: #033b82;
+    transform: scale(1.05);
+}
+
+.signin-btn {
+    position: absolute;
+    right: 20px;
+    background: white;
+    color: #033b82;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signin-btn:hover {
+    background: #033b82;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('imges/image.png') no-repeat center/cover fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+    padding: 0 20px;
+}
+
+/* ===== Cards Section ===== */
+.content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 700px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+    color: #004aad;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* ===== Contact Section ===== */
+.contact-container {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #004aad;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background: #004aad;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #f0f4ff;
+}
+
+/* ===== Calendar Section ===== */
+.calendar-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header h2 {
+    color: #004aad;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn {
+    background: #004aad;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #033b82;
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 60px;
+    background: #00336e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .signin-btn {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .hero {
+        font-size: 36px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .calendar-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .contact-container {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+/* ===== Header ===== */
+header {
+    background: #004aad;
+    color: white;
+    padding: 25px 0;
+    border-bottom: 4px solid #033b82;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 130px; /* Increased header height */
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    width: 100px;      /* Increased logo size */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 14px rgba(255,255,255,0.6);
+}
+
+.header-container h1 {
+    font-size: 32px;           /* Bigger title to match logo */
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+/* ===== Navbar Custom Style ===== */
+.navbar {
+  background-color: #2700c3 !important;  /* اللون */
+  padding: 20px 0 !important;            /* يخليها أطول */
+  min-height: 90px !important;           /* ارتفاع ثابت */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  width: 80px !important;                /* لوجو أكبر */
+  height: auto;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+  font-weight: 600;
+  padding: 12px 20px !important;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 6px;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+.fade-row {
+      opacity: 0;
+      animation: fadeRow 0.8s ease-in-out forwards;
+}
+@keyframes fadeRow {
+      0% { opacity: 0; transform: translateY(-5px); }
+      100% { opacity: 1; transform: translateY(0); }
+}
